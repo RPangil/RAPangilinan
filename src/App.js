@@ -13,11 +13,10 @@ function App()
             <Header />
             <main>
                 <Container>
-                    <p>Welcome! I'm</p>
-                    <h1>Robert Pangilinan</h1>
-                    <p>
+                    <h1>Welcome! I'm <span className={styles.xlText}>Robert Pangilinan</span></h1>
+                    <h2 className={styles.mdText}>
                         I'm a frontend web developer with a primary focus on React and aim to create intuitive and user friendly websites.
-                    </p>
+                    </h2>
                 </Container>
                 <Container title='About Me'>
                     <p>
