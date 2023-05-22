@@ -10,34 +10,45 @@
     p:nth-child(n+2) {margin-top: 1rem;}
 }
 
+/******* Text Colors *******/
+.wh {color: colors.$white;}
+.red {color: colors.$red;}
+.black {color: colors.$black;}
+
+
 /******* Text Sizes *******/
-
-.xlText {
-  font-size: 5rem;
-  line-height: 7rem;
+.xlText 
+{
+    font-size: 5rem;
+    line-height: 7rem;
 }
 
-.lgText {
-  font-size: 3rem;
-  line-height: 4.2rem;
+.lgText 
+{
+    font-size: 3rem;
+    line-height: 4.2rem;
 }
 
-.mdText {
-  font-size: 1.5rem;
-  line-height: 2.1rem;
+.mdText 
+{
+    font-size: 1.5rem;
+    line-height: 2.1rem;
 }
 
-.smdText {
-  font-size: 1.2rem;
-  line-height: 1.68rem;
+.smdText 
+{
+    font-size: 1.2rem;
+    line-height: 1.68rem;
 }
 
-.smText {
-  font-size: 0.8rem;
-  line-height: 1.12rem;
+.smText 
+{
+    font-size: 0.8rem;
+    line-height: 1.12rem;
 }
 
-.xsText {
-  font-size: 0.7rem;
-  line-height: 0.98rem;
+.xsText 
+{
+    font-size: 0.7rem;
+    line-height: 0.98rem;
 }
