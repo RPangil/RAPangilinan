@@ -1,10 +1,10 @@
 import { Fragment } from 'react';
 
 import Header from './Components/Header/Header';
-
-import './App.css';
 import Footer from './Components/Footer/Footer';
 import Container from './Components/UI/Container';
+
+import styles from './SCSS/main.module.scss';
 
 function App() 
 {
