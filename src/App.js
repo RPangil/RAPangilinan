@@ -3,6 +3,7 @@ import { Fragment } from 'react';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import Container from './Components/UI/Container';
+import ProgressBar from './Components/UI/ProgressBar/ProgressBar';
 
 import styles from './SCSS/main.module.scss';
 
@@ -32,16 +33,20 @@ function App()
                 </Container>
                 <Container title="Technologies">
                     <p>Some of the technologies I use are:</p>
-                    <ul>
-                        <li>React</li>
-                        <li>Sass</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>jQuery</li>
-                        <li>MySQL</li>
-                        <li>Bootstrap</li>
-                    </ul>
+                    <div className={`${styles.progressBarContainer} ${styles.contain}`}>
+                        <div className={styles.left}>
+                            <ProgressBar completed={90} label='HTML' />
+                            <ProgressBar completed={90} label='CSS' />
+                            <ProgressBar completed={85} label='Bootstrap' />
+                            <ProgressBar completed={80} label='React' />
+                        </div>
+                        <div className={styles.right}>
+                            <ProgressBar completed={80} label='JavaScript' />
+                            <ProgressBar completed={80} label='jQuery' />
+                            <ProgressBar completed={70} label='MySQL' />
+                            <ProgressBar completed={50} label='SCSS' />
+                        </div>
+                    </div>
                 </Container>
                 <Container title="Places I've Worked">
                     <ul>
