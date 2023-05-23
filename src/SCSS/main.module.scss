@@ -7,7 +7,7 @@
     margin: auto;
     padding: 5rem;
 
-    p:nth-child(n+2) {margin-top: 1rem;}
+    p:nth-of-type(n+2) {margin-top: 1rem;}
 }
 
 .hero
