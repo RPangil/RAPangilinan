@@ -10,6 +10,11 @@
     p:nth-child(n+2) {margin-top: 1rem;}
 }
 
+/******* Text Alignment *******/
+.lt {text-align: left;}
+.ct {text-align: center;}
+.rt {text-align: right;}
+
 /******* Text Colors *******/
 .wh {color: colors.$white;}
 .red {color: colors.$red;}
@@ -53,3 +58,9 @@
     font-size: 0.7rem;
     line-height: 0.98rem;
 }
+
+/******* Text Weight *******/
+.bold {font-weight: 700;}
+.med {font-weight: 500;}
+.norm {font-weight: 400;}
+.thin {font-weight: 100;}
