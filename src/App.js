@@ -12,11 +12,11 @@ function App()
         <Fragment>
             <Header />
             <main>
-                <Container>
-                    <h1>Welcome! I'm <span className={`${styles.xlText} ${styles.red}`}>Robert Pangilinan</span></h1>
-                    <h2 className={`${styles.mdText} ${styles.grey}`}>
-                        I'm a frontend web developer with a primary focus on React and aim to create intuitive and user friendly websites.
-                    </h2>
+                <Container className={`${styles.hero} ${styles.ct}`}>
+                    <h1 className={styles.norm}>Welcome, I'm <span className={`${styles.red} ${styles.med}`}>Robert Pangilinan</span></h1>
+                    <p className={`${styles.smdText}`}>
+                        I'm a front-end web developer that aims to create intuitive and user friendly websites.
+                    </p>
                 </Container>
                 <Container title='About Me'>
                     <p>
@@ -52,7 +52,7 @@ function App()
                 </Container>
                 <Container title="Websites I've Worked On">
                     <ul>
-                        <li>Quester</li>
+                        <li>Questar</li>
                         <li>Ketoret</li>
                         <li>Novawulf</li>
                         <li>Aero Capital Solutions</li>
