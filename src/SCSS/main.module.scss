@@ -5,7 +5,7 @@
     max-width: 1020px;
     width: 90%;
     margin: auto;
-    padding: 5rem;
+    padding: 5rem 0;
 
     p:nth-of-type(n+2) {margin-top: 1rem;}
 }
@@ -20,7 +20,17 @@
         width: 49%;
     }
 
-    .left
+    .leftTh
+    {
+        width: 30%;
+    }
+
+    .leftTh + .right
+    {
+        width: 78%;
+    }
+
+    .left, .leftTh
     {
         margin-right: 1%;
     }
@@ -94,3 +104,26 @@
 .med {font-weight: 500;}
 .norm {font-weight: 400;}
 .thin {font-weight: 100;}
+
+.slider
+{
+    .company
+    {
+        padding: 0.5rem 1rem;
+        border-left: solid 1px colors.$grey;
+        transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+        cursor: pointer;
+
+        &:hover
+        {
+            background-color: colors.$lightGrey;
+            border-color: colors.$red;
+            color: colors.$red;
+        }
+    }
+
+    .slide
+    {
+        ul {padding-left: 1rem;}
+    }
+}
