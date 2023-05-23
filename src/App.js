@@ -37,11 +37,11 @@ function App()
                         <div className={styles.left}>
                             <ProgressBar completed={90} label='HTML' />
                             <ProgressBar completed={90} label='CSS' />
+                            <ProgressBar completed={85} label='JavaScript' />
                             <ProgressBar completed={85} label='Bootstrap' />
-                            <ProgressBar completed={80} label='React' />
                         </div>
                         <div className={styles.right}>
-                            <ProgressBar completed={80} label='JavaScript' />
+                            <ProgressBar completed={80} label='React' />
                             <ProgressBar completed={80} label='jQuery' />
                             <ProgressBar completed={70} label='MySQL' />
                             <ProgressBar completed={50} label='SCSS' />
@@ -57,6 +57,7 @@ function App()
                 </Container>
                 <Container title="Websites I've Worked On">
                     <ul>
+                        <li>DZP</li>
                         <li>Questar</li>
                         <li>Ketoret</li>
                         <li>Novawulf</li>
