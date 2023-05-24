@@ -177,3 +177,36 @@
     .hfc {background: url(../../public/images/HFC.jpg) no-repeat center/cover;}
     .quorum {background: url(../../public/images/Quorum.jpg) no-repeat center/cover;}
 }
+
+@media screen and (max-width: 980px)
+{
+    .projects
+    {
+        .item 
+        {
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+    .progressBarContainer
+    {
+        flex-wrap: wrap;
+
+        .left, .right 
+        {
+            width: 100%;
+            margin: 0;
+        }
+    }
+
+    .projects
+    {
+        .item
+        {
+            width: 100%;
+        }
+    }
+}
