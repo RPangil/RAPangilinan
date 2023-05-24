@@ -7,6 +7,7 @@
     margin: auto;
     padding: 5rem 0;
 
+    h2 {margin-bottom: 1rem;}
     p:nth-of-type(n+2) {margin-top: 1rem;}
 }
 
@@ -116,7 +117,7 @@
 
         &:hover
         {
-            background-color: colors.$lightGrey;
+            background-color: colors.$grey;
             border-color: colors.$red;
             color: colors.$red;
         }
@@ -124,9 +125,30 @@
 
     .slide
     {
-        min-height: 270px;
+        min-height: 290px;
 
         p {margin: 0.5rem 0 1rem;}
         ul {padding-left: 1rem;}
     }
+}
+
+.projects
+{
+    height: max-content;
+    flex-wrap: wrap;
+
+    .item 
+    {
+        width: 33.33%;
+        aspect-ratio: 1/1;
+    }
+
+    .dzp {background: url(../../public/images/DZP.jpg) no-repeat center/cover;}
+    .questar {background: url(../../public/images/Questar.jpg) no-repeat center/cover;}
+    .ketoret {background: url(../../public/images/Ketoret.jpg) no-repeat center/cover;}
+    .novawulf {background: url(../../public/images/Novawulf.jpg) no-repeat center/cover;}
+    .acs {background: url(../../public/images/ACS.jpg) no-repeat center/cover;}
+    .saige {background: url(../../public/images/Saige.jpg) no-repeat center/cover;}
+    .hfc {background: url(../../public/images/HFC.jpg) no-repeat center/cover;}
+    .quorum {background: url(../../public/images/Quorum.jpg) no-repeat center/cover;}
 }
