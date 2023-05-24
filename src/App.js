@@ -124,56 +124,56 @@ function App()
                             <div className={styles.details}>
                                 <h3 className={`${styles.title} ${styles.mdText} ${styles.med} ${styles.red}`}>DZP</h3>
                                 <p className={`${styles.description} ${styles.smText}`}>React, SCSS, Bootstrap, Redux</p>
-                                <a href='https://deltazeroproduction.com/' className={styles.link}>Visit Site</a>
+                                <a href='https://deltazeroproduction.com/' className={`${styles.link} ${styles.smText}`}>Visit Site</a>
                             </div>
                         </div>
                         <div className={`${styles.item} ${styles.questar}`}>
                             <div className={styles.details}>
                                 <h3 className={`${styles.title} ${styles.mdText} ${styles.med} ${styles.red}`}>Questar</h3>
                                 <p className={`${styles.description} ${styles.smText}`}>HTML, CSS, jQuery, Perl</p>
-                                <a href='https://www.questarcap.com/' className={styles.link}>Visit Site</a>
+                                <a href='https://www.questarcap.com/' className={`${styles.link} ${styles.smText}`}>Visit Site</a>
                             </div>
                         </div>
                         <div className={`${styles.item} ${styles.ketoret}`}>
                             <div className={styles.details}>
                                 <h3 className={`${styles.title} ${styles.mdText} ${styles.med} ${styles.red}`}>Ketoret</h3>
                                 <p className={`${styles.description} ${styles.smText}`}>HTML, CSS, jQuery, Perl</p>
-                                <a href='https://www.ketoretcap.com/' className={styles.link}>Visit Site</a>
+                                <a href='https://www.ketoretcap.com/' className={`${styles.link} ${styles.smText}`}>Visit Site</a>
                             </div>
                         </div>
                         <div className={`${styles.item} ${styles.novawulf}`}>
                             <div className={styles.details}>
                                 <h3 className={`${styles.title} ${styles.mdText} ${styles.med} ${styles.red}`}>Novawulf</h3>
                                 <p className={`${styles.description} ${styles.smText}`}>HTML, CSS, jQuery, Perl</p>
-                                <a href='https://novawulf.io/' className={styles.link}>Visit Site</a>
+                                <a href='https://novawulf.io/' className={`${styles.link} ${styles.smText}`}>Visit Site</a>
                             </div>
                         </div>
                         <div className={`${styles.item} ${styles.acs}`}>
                             <div className={styles.details}>
                                 <h3 className={`${styles.title} ${styles.mdText} ${styles.med} ${styles.red}`}>Aero Capital Solutions</h3>
                                 <p className={`${styles.description} ${styles.smText}`}>HTML, CSS, jQuery, AJAX, Perl</p>
-                                <a href='https://www.aerocapitalsolutions.com/' className={styles.link}>Visit Site</a>
+                                <a href='https://www.aerocapitalsolutions.com/' className={`${styles.link} ${styles.smText}`}>Visit Site</a>
                             </div>
                         </div>
                         <div className={`${styles.item} ${styles.saige}`}>
                             <div className={styles.details}>
                                 <h3 className={`${styles.title} ${styles.mdText} ${styles.med} ${styles.red}`}>Saige Private Wealth</h3>
                                 <p className={`${styles.description} ${styles.smText}`}>HTML, CSS, jQuery, Perl</p>
-                                <a href='https://www.saigepwm.com/' className={styles.link}>Visit Site</a>
+                                <a href='https://www.saigepwm.com/' className={`${styles.link} ${styles.smText}`}>Visit Site</a>
                             </div>
                         </div>
                         <div className={`${styles.item} ${styles.hfc}`}>
                             <div className={styles.details}>
                                 <h3 className={`${styles.title} ${styles.mdText} ${styles.med} ${styles.red}`}>HFC</h3>
                                 <p className={`${styles.description} ${styles.smText}`}>HTML, CSS, jQuery, AJAX, Perl</p>
-                                <a href='https://www.hfc.org/' className={styles.link}>Visit Site</a>
+                                <a href='https://www.hfc.org/' className={`${styles.link} ${styles.smText}`}>Visit Site</a>
                             </div>
                         </div>
                         <div className={`${styles.item} ${styles.quorum}`}>
                             <div className={styles.details}>
                                 <h3 className={`${styles.title} ${styles.mdText} ${styles.med} ${styles.red}`}>Quorum</h3>
                                 <p className={`${styles.description} ${styles.smText}`}>HTML, CSS, jQuery, Perl</p>
-                                <a href='https://www.quorumpw.com/' className={styles.link}>Visit Site</a>
+                                <a href='https://www.quorumpw.com/' className={`${styles.link} ${styles.smText}`}>Visit Site</a>
                             </div>
                         </div>
                     </div>
