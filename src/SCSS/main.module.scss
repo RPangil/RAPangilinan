@@ -191,6 +191,28 @@
 
 @media screen and (max-width: 767px)
 {
+    .container {padding: 2.5rem 0;}
+
+    .slider
+    {
+        flex-wrap: wrap;
+
+        .leftTh, .leftTh + .right {width: 100%;}
+        
+        .leftTh
+        {
+            margin-bottom: 1.5rem;
+
+            .company
+            {
+                border: none;
+                border-bottom: solid 1px colors.$grey;
+
+                &:hover {border-color: colors.$red;}
+            }
+        }
+    }
+
     .progressBarContainer
     {
         flex-wrap: wrap;
