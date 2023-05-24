@@ -141,6 +141,21 @@
     {
         width: 33.33%;
         aspect-ratio: 1/1;
+
+        .details
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgba($color: colors.$black, $alpha: 0.85);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            aspect-ratio: 1/1;
+
+            &:hover {opacity: 100;}
+            .description {margin: 0.5rem 0;}
+        }
     }
 
     .dzp {background: url(../../public/images/DZP.jpg) no-repeat center/cover;}
