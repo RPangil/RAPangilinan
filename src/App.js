@@ -119,17 +119,48 @@ function App()
                     </div>
                 </Container>
                 <Container title="Websites I've Worked On">
-                    <ul>
-                        <li>DZP</li>
-                        <li>Questar</li>
-                        <li>Ketoret</li>
-                        <li>Novawulf</li>
-                        <li>Aero Capital Solutions</li>
-                        <li>Saige Private Wealth</li>
-                        <li>HFC</li>
-                        <li>Quorum</li>
-                        <li>Famiglia</li>
-                    </ul>
+                    <div className={`${styles.contain} ${styles.projects}`}>
+                        <div className={`${styles.item} ${styles.dzp}`}>
+                            <h3 className={styles.title}>DZP</h3>
+                            <p className={styles.description}>React, SCSS, Bootstrap, Redux</p>
+                            <a href='https://deltazeroproduction.com/' className={styles.link}>Visit Site</a>
+                        </div>
+                        <div className={`${styles.item} ${styles.questar}`}>
+                            <h3 className={styles.title}>Questar</h3>
+                            <p className={styles.description}>HTML, CSS, jQuery, Perl</p>
+                            <a href='https://www.questarcap.com/' className={styles.link}>Visit Site</a>
+                        </div>
+                        <div className={`${styles.item} ${styles.ketoret}`}>
+                            <h3 className={styles.title}>Ketoret</h3>
+                            <p className={styles.description}>HTML, CSS, jQuery, Perl</p>
+                            <a href='https://www.ketoretcap.com/' className={styles.link}>Visit Site</a>
+                        </div>
+                        <div className={`${styles.item} ${styles.novawulf}`}>
+                            <h3 className={styles.title}>Novawulf</h3>
+                            <p className={styles.description}>HTML, CSS, jQuery, Perl</p>
+                            <a href='https://novawulf.io/' className={styles.link}>Visit Site</a>
+                        </div>
+                        <div className={`${styles.item} ${styles.acs}`}>
+                            <h3 className={styles.title}>Aero Capital Solutions</h3>
+                            <p className={styles.description}>HTML, CSS, jQuery, AJAX, Perl</p>
+                            <a href='https://www.aerocapitalsolutions.com/' className={styles.link}>Visit Site</a>
+                        </div>
+                        <div className={`${styles.item} ${styles.saige}`}>
+                            <h3 className={styles.title}>Saige Private Wealth</h3>
+                            <p className={styles.description}>HTML, CSS, jQuery, Perl</p>
+                            <a href='https://www.saigepwm.com/' className={styles.link}>Visit Site</a>
+                        </div>
+                        <div className={`${styles.item} ${styles.hfc}`}>
+                            <h3 className={styles.title}>HFC</h3>
+                            <p className={styles.description}>HTML, CSS, jQuery, AJAX, Perl</p>
+                            <a href='https://www.hfc.org/' className={styles.link}>Visit Site</a>
+                        </div>
+                        <div className={`${styles.item} ${styles.quorum}`}>
+                            <h3 className={styles.title}>Quorum</h3>
+                            <p className={styles.description}>HTML, CSS, jQuery, Perl</p>
+                            <a href='https://www.quorumpw.com/' className={styles.link}>Visit Site</a>
+                        </div>
+                    </div>
                 </Container>
             </main>
             <Footer />
