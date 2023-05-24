@@ -73,9 +73,9 @@ function App()
                 <Container title="Places I've Worked">
                     <div className={`${styles.contain} ${styles.slider}`}>
                         <div className={styles.leftTh}>
-                            <div className={styles.company} onClick={() => companyClicked(1)}>Ovis Technologies</div>
-                            <div className={styles.company} onClick={() => companyClicked(2)}>Element Zero</div>
-                            <div className={styles.company} onClick={() => companyClicked(3)}>LaGuardia Community College</div>
+                            <div className={`${styles.company} ${activeSlide.activeIndex === 1 ? styles.active:''}`} onClick={() => companyClicked(1)}>Ovis Technologies</div>
+                            <div className={`${styles.company} ${activeSlide.activeIndex === 2 ? styles.active:''}`} onClick={() => companyClicked(2)}>Element Zero</div>
+                            <div className={`${styles.company} ${activeSlide.activeIndex === 3 ? styles.active:''}`} onClick={() => companyClicked(3)}>LaGuardia Community College</div>
                         </div>
                         <div className={styles.right}>
                             {
