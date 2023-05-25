@@ -7,7 +7,7 @@ function Header()
     return (
         <header>
             <nav>
-                <div className={styles.logo}></div>
+                <div className={styles.logo}>RAP</div>
                 <div className={styles.nav}>
                     <Link
                         to='About'

@@ -1,14 +1,44 @@
-.logo
-{
+@use '../../SCSS/colors';
 
+header
+{
+    position: fixed;
+    width: 100%;
+    padding: 2rem 0;
+    backdrop-filter: blur(20px);
+    background-color: rgba($color: colors.$black, $alpha: 0.5);
+    z-index: 100;
 }
 
-.nav
+nav
 {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
 
-}
-
-.menu
-{
-    display: none;
+    .logo
+    {
+        width: 200px;
+        color: colors.$white;
+    }
+    
+    .nav
+    {
+        color: colors.$white;
+    
+        a
+        {
+            margin-right: 2rem;
+            transition: color 0.3s ease;
+    
+            &:hover {color: colors.$red;}
+            &:last-child {margin-right: 0;}
+        }
+    }
+    
+    .menu
+    {
+        display: none;
+    }
 }
