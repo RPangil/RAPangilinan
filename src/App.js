@@ -41,7 +41,7 @@ function App()
                         I'm a front-end web developer that aims to create intuitive and user friendly websites.
                     </p>
                 </Container>
-                <Container title='About Me'>
+                <Container title='About Me' id='About'>
                     <p>
                         Hey! My name is Robert and I take interest in almost anything related to tech, photography, basketball and football. 
                         I started to get into web development back in 2011, when I had a computer class that taught us how to make basic websites.
@@ -53,7 +53,7 @@ function App()
                         Recently, I'm working on a couple of projects for an F1 league that wants a revamped website and a private project, while looking for a job.
                     </p>
                 </Container>
-                <Container title="Technologies">
+                <Container title="Technologies" id='Skills'>
                     <p>Some of the technologies I use:</p>
                     <div className={`${styles.progressBarContainer} ${styles.contain}`}>
                         <div className={styles.left}>
@@ -70,7 +70,7 @@ function App()
                         </div>
                     </div>
                 </Container>
-                <Container title="Places I've Worked">
+                <Container title="Places I've Worked" id='Experience'>
                     <div className={`${styles.contain} ${styles.slider}`}>
                         <div className={styles.leftTh}>
                             <div className={`${styles.company} ${activeSlide.activeIndex === 1 ? styles.active:''}`} onClick={() => companyClicked(1)}>Ovis Technologies</div>
@@ -118,7 +118,7 @@ function App()
                         </div>
                     </div>
                 </Container>
-                <Container title="Websites I've Worked On">
+                <Container title="Websites I've Worked On" id='Work'>
                     <div className={`${styles.contain} ${styles.projects}`}>
                         <div className={`${styles.item} ${styles.dzp}`}>
                             <div className={styles.details}>
