@@ -56,7 +56,13 @@ function Header()
                         Work
                     </Link>
                 </div>
-                <div className={styles.menu}></div>
+                <div className={styles.menu}>
+                    <button>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </button>
+                </div>
             </nav>
         </header>
     );
