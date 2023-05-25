@@ -35,7 +35,7 @@ function App()
         <Fragment>
             <Header />
             <main>
-                <Container className={`${styles.hero} ${styles.ct}`}>
+                <Container className={`${styles.hero} ${styles.ct}`} id='hero'>
                     <h1 className={styles.norm}>Welcome, I'm <span className={`${styles.red} ${styles.med}`}>Robert Pangilinan</span></h1>
                     <p className={`${styles.smdText}`}>
                         I'm a front-end web developer that aims to create intuitive and user friendly websites.
