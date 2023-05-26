@@ -22,6 +22,8 @@
             height: auto;
             margin-right: 1rem;
             display: block;
+            color: transparent;
+            overflow: hidden;
             aspect-ratio: 1/1;
 
             &:last-child {margin-right: 0;}
