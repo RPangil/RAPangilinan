@@ -90,6 +90,7 @@ function Header()
                     >
                         Work
                     </Link>
+                    <a href='/docs/RobertAndrewPangilinan-Resume.pdf' target='_blank' rel='noreferrer'>Resume</a>
                 </div>
                 <div className={styles.menu}>
                     <button aria-label='Menu' onClick={menuIsClicked}>
@@ -143,6 +144,7 @@ function Header()
                             >
                                 Work
                             </Link>
+                            <a href='/docs/RobertAndrewPangilinan-Resume.pdf' target='_blank' rel='noreferrer'>Resume</a>
                         </nav>
                     </div>
                 </div>
