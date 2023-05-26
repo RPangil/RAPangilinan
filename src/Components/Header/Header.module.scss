@@ -4,7 +4,7 @@ header
 {
     position: fixed;
     width: 100%;
-    padding: 1.5rem 0;
+    padding: 1rem 0;
     backdrop-filter: blur(20px);
     background-color: rgba($color: colors.$black, $alpha: 0.5);
     border-bottom: solid 1px transparent;
@@ -25,9 +25,16 @@ nav
     .logo
     {
         position: relative;
-        width: 200px;
-        color: colors.$white;
         z-index: 100;
+
+        a
+        {
+            height: 50px;
+            display: block;
+            background: url(../../../public/images/logo.png) no-repeat center/contain;
+            color: transparent;
+            aspect-ratio: 2.94;
+        }
     }
     
     .nav
