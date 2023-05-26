@@ -78,43 +78,40 @@ function App()
                             <div className={`${styles.company} ${activeSlide.activeIndex === 3 ? styles.active:''}`} onClick={() => companyClicked(3)}>LaGuardia Community College</div>
                         </div>
                         <div className={styles.right}>
-                            {
-                                activeSlide.activeIndex === 1 ?
-                                <div className={styles.slide} key={1}>
-                                    <h3 className={`${styles.smdText} ${styles.med}`}>Jr. Web Developer - <span>Ovis Technologies</span></h3>
-                                    <p className={styles.smText}>April 2021 - March 2023</p>
-                                    <ul>
-                                        <li>Created responsive websites using HTML, CSS, JavaScript, jQuery, and Perl</li>
-                                        <li>Converted mock-ups (Photoshop / Adobe XD) to websites</li>
-                                        <li>Provided customer support using the company’s ticketing system, which involved direct communication with end users</li>
-                                        <li>Coordinated with Project Managers, Lead Developer and the Quality Assurance Group to ensure the project objectives are met</li>
-                                    </ul>
-                                </div>
-                                :
-                                activeSlide.activeIndex === 2 ?
-                                <div className={styles.slide} key={2}>
-                                    <h3 className={`${styles.smdText} ${styles.med}`}>Full Stack Web Developer - <span>Element Zero</span></h3>
-                                    <p className={styles.smText}>September 2019 - March 2021</p>
-                                    <ul>
-                                        <li>Redesigned the company website to be more responsive and mobile-friendly</li>
-                                        <li>Created a subsite to generate leads for the company’s IoT platform. Redesigned and created a subsite for an NPO owned by the company’s investor</li>
-                                        <li>Worked on a project that required React/Angular, Laravel and MySQL</li>
-                                    </ul>
-                                </div>
-                                :
-                                <div className={styles.slide} key={3}>
-                                    <h3 className={`${styles.smdText} ${styles.med}`}>Instructional Design Assistant - <span>LaGuardia Community College</span></h3>
-                                    <p className={styles.smText}>August 2016 - June 2019</p>
-                                    <ul>
-                                        <li>Design and develop faculty and instructional web pages using HTML, CSS, Bootstrap, and JavaScript</li>
-                                        <li>Use Adobe Photoshop for images on websites</li>
-                                        <li>Provide one-on-one consultation in the use of instructional technologies and webpage design</li>
-                                        <li>Provide classroom instructional assistance and tutorials</li>
-                                        <li>Supervise the ePortfolio Studio Lab, and aid faculty and students in the use of the ePortfolio</li>
-                                        <li>Provide technical support to the ePortfolio Studio Lab</li>
-                                    </ul>
-                                </div>
-                            }
+                            <div className={`${styles.slide} ${activeSlide.activeIndex === 1 ? styles.active : ''}`} key={1}>
+                                <h3 className={`${styles.smdText} ${styles.med}`}>Jr. Web Developer - <span>Ovis Technologies</span></h3>
+                                <p className={styles.smText}>April 2021 - March 2023</p>
+                                <ul>
+                                    <li>Created responsive websites using HTML, CSS, JavaScript, jQuery, and Perl</li>
+                                    <li>Converted mock-ups (Photoshop / Adobe XD) to websites</li>
+                                    <li>Provided customer support using the company’s ticketing system, which involved direct communication with end users</li>
+                                    <li>Coordinated with Project Managers, Lead Developer and the Quality Assurance Group to ensure the project objectives are met</li>
+                                </ul>
+                            </div>
+                            
+                            
+                            <div className={`${styles.slide} ${activeSlide.activeIndex === 2 ? styles.active : ''}`} key={2}>
+                                <h3 className={`${styles.smdText} ${styles.med}`}>Full Stack Web Developer - <span>Element Zero</span></h3>
+                                <p className={styles.smText}>September 2019 - March 2021</p>
+                                <ul>
+                                    <li>Redesigned the company website to be more responsive and mobile-friendly</li>
+                                    <li>Created a subsite to generate leads for the company’s IoT platform. Redesigned and created a subsite for an NPO owned by the company’s investor</li>
+                                    <li>Worked on a project that required React/Angular, Laravel and MySQL</li>
+                                </ul>
+                            </div>
+                            
+                            <div className={`${styles.slide} ${activeSlide.activeIndex === 3 ? styles.active : ''}`} key={3}>
+                                <h3 className={`${styles.smdText} ${styles.med}`}>Instructional Design Assistant - <span>LaGuardia Community College</span></h3>
+                                <p className={styles.smText}>August 2016 - June 2019</p>
+                                <ul>
+                                    <li>Design and develop faculty and instructional web pages using HTML, CSS, Bootstrap, and JavaScript</li>
+                                    <li>Use Adobe Photoshop for images on websites</li>
+                                    <li>Provide one-on-one consultation in the use of instructional technologies and webpage design</li>
+                                    <li>Provide classroom instructional assistance and tutorials</li>
+                                    <li>Supervise the ePortfolio Studio Lab, and aid faculty and students in the use of the ePortfolio</li>
+                                    <li>Provide technical support to the ePortfolio Studio Lab</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </Container>

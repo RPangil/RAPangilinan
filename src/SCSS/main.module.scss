@@ -115,6 +115,8 @@
 
 .slider
 {
+    min-height: 290px;
+
     .company
     {
         padding: 0.5rem 1rem;
@@ -129,9 +131,24 @@
         }
     }
 
+    .right 
+    {
+        position: relative;
+        height: 290px;
+    }
+
     .slide
     {
-        min-height: 290px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+
+        &.active 
+        {
+            opacity: 1;
+        }
 
         p {margin: 0.5rem 0 1rem;}
         ul {padding-left: 1rem;}
@@ -209,7 +226,9 @@
 
     .slider
     {
+        min-height: auto;
         flex-wrap: wrap;
+        overflow: hidden;
 
         .leftTh, .leftTh + .right {width: 100%;}
         
@@ -219,6 +238,7 @@
 
             .company
             {
+                padding: 1rem;
                 border: none;
                 border-bottom: solid 1px colors.$grey;
 
@@ -244,5 +264,13 @@
         {
             width: 100%;
         }
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .slider
+    {
+        .right {min-height: 370px;}
     }
 }
