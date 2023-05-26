@@ -54,6 +54,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url(../../public/images/Robert.jpg) no-repeat;
+    background-position: 175% 30%;
+    background-size: 75%;
 
     h1 {font-variant: small-caps;}
 }
@@ -224,6 +227,8 @@
 {
     .container {padding: 2.5rem 0;}
 
+    .hero {background-size: 90%;}
+
     .slider
     {
         min-height: auto;
@@ -273,4 +278,9 @@
     {
         .right {min-height: 370px;}
     }
+}
+
+@media screen and (max-height: 700px)
+{
+    .hero {background-position-y: 55%;}
 }
