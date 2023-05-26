@@ -103,8 +103,10 @@ function Header()
                                 to='About'
                                 spy={true}
                                 smooth={true}
+                                offset={-65}
                                 duration={500}
                                 isDynamic={true}
+                                onClick={menuIsClicked}
                             >
                                 About
                             </Link>
@@ -112,8 +114,10 @@ function Header()
                                 to='Skills'
                                 spy={true}
                                 smooth={true}
+                                offset={-65}
                                 duration={500}
                                 isDynamic={true}
+                                onClick={menuIsClicked}
                             >
                                 Skills
                             </Link>
@@ -121,8 +125,10 @@ function Header()
                                 to='Experience'
                                 spy={true}
                                 smooth={true}
+                                offset={-65}
                                 duration={500}
                                 isDynamic={true}
+                                onClick={menuIsClicked}
                             >
                                 Experience
                             </Link>
@@ -130,8 +136,10 @@ function Header()
                                 to='Work'
                                 spy={true}
                                 smooth={true}
+                                offset={-65}
                                 duration={500}
                                 isDynamic={true}
+                                onClick={menuIsClicked}
                             >
                                 Work
                             </Link>
