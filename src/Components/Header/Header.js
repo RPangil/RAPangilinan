@@ -1,15 +1,16 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
 
 import styles from './Header.module.scss';
-import { useState } from 'react';
 
 function Header()
 {
     const [menuClick, setMenuClick] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
 
     function menuIsClicked()
     {
-        if(menuClick === false)
+        if(!menuClick)
         {
             setMenuClick(true);
         }
@@ -19,8 +20,23 @@ function Header()
         }
     }
 
+    useEffect(() =>
+    {
+        window.addEventListener('scroll', () =>
+        {
+            if(window.scrollY > 0)
+            {
+                setIsScrolled(true);
+            }
+            else
+            {
+                setIsScrolled(false);
+            }
+        })
+    });
+
     return (
-        <header>
+        <header className={isScrolled ? styles.scroll : ''}>
             <nav>
                 <div className={styles.logo}>
                     <Link
