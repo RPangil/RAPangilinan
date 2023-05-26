@@ -54,6 +54,7 @@ function Header()
                         to='About'
                         spy={true}
                         smooth={true}
+                        offset={-25}
                         duration={500}
                         isDynamic={true}
                     >
@@ -63,6 +64,7 @@ function Header()
                         to='Skills'
                         spy={true}
                         smooth={true}
+                        offset={-25}
                         duration={500}
                         isDynamic={true}
                     >
@@ -72,6 +74,7 @@ function Header()
                         to='Experience'
                         spy={true}
                         smooth={true}
+                        offset={-25}
                         duration={500}
                         isDynamic={true}
                     >
@@ -81,6 +84,7 @@ function Header()
                         to='Work'
                         spy={true}
                         smooth={true}
+                        offset={-25}
                         duration={500}
                         isDynamic={true}
                     >
