@@ -88,10 +88,8 @@ function App()
                                     <li>Coordinated with Project Managers, Lead Developer and the Quality Assurance Group to ensure the project objectives are met</li>
                                 </ul>
                             </div>
-                            
-                            
                             <div className={`${styles.slide} ${activeSlide.activeIndex === 2 ? styles.active : ''}`} key={2}>
-                                <h3 className={`${styles.smdText} ${styles.med}`}>Full Stack Web Developer - <span>Element Zero</span></h3>
+                                <h3 className={`${styles.smdText} ${styles.med}`}>Web Developer - <span>Element Zero</span></h3>
                                 <p className={styles.smText}>September 2019 - March 2021</p>
                                 <ul>
                                     <li>Redesigned the company website to be more responsive and mobile-friendly</li>
@@ -99,7 +97,6 @@ function App()
                                     <li>Worked on a project that required React/Angular, Laravel and MySQL</li>
                                 </ul>
                             </div>
-                            
                             <div className={`${styles.slide} ${activeSlide.activeIndex === 3 ? styles.active : ''}`} key={3}>
                                 <h3 className={`${styles.smdText} ${styles.med}`}>Instructional Design Assistant - <span>LaGuardia Community College</span></h3>
                                 <p className={styles.smText}>August 2016 - June 2019</p>
