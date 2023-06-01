@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.61fb07dd.css",
+    "main.js": "/static/js/main.2947f781.js",
+    "static/media/Robert.jpg": "/static/media/Robert.6ac5e18057825d5c8689.jpg",
+    "static/media/Ketoret.jpg": "/static/media/Ketoret.2a7447907372350a74ec.jpg",
+    "static/media/Saige.jpg": "/static/media/Saige.4a6220364d8f38b0aa6d.jpg",
+    "static/media/Quorum.jpg": "/static/media/Quorum.21a958376534c326ed85.jpg",
+    "static/media/Questar.jpg": "/static/media/Questar.2d0b24fb18cfe90fac83.jpg",
+    "static/media/ACS.jpg": "/static/media/ACS.decc2e4d12721931fb21.jpg",
+    "static/media/HFC.jpg": "/static/media/HFC.d2e93e9d343f93a37049.jpg",
+    "static/media/Novawulf.jpg": "/static/media/Novawulf.1da2e46b3d4a3d53e6dd.jpg",
+    "static/media/DZP.jpg": "/static/media/DZP.7fced0a8b8641d0c5660.jpg",
+    "static/media/logo.png": "/static/media/logo.53be455960feafc00775.png",
+    "static/media/linkedIn_white.png": "/static/media/linkedIn_white.9994ff8d0017f12ca2ec.png",
+    "static/media/github_white.svg": "/static/media/github_white.97ed8e7eef60d61ca469.svg",
+    "index.html": "/index.html",
+    "main.61fb07dd.css.map": "/static/css/main.61fb07dd.css.map",
+    "main.2947f781.js.map": "/static/js/main.2947f781.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.61fb07dd.css",
+    "static/js/main.2947f781.js"
+  ]
+}
