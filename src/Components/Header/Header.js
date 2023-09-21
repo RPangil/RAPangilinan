@@ -154,6 +154,17 @@ function Header()
                             >
                                 Work
                             </Link>
+                            <Link
+                                to='Projects'
+                                spy={true}
+                                smooth={true}
+                                offset={-65}
+                                duration={500}
+                                isDynamic={true}
+                                onClick={menuIsClicked}
+                            >
+                                Projects
+                            </Link>
                             <a href='/docs/RobertAndrewPangilinan-Resume.pdf' target='_blank' rel='noreferrer'>Resume</a>
                         </nav>
                     </div>
