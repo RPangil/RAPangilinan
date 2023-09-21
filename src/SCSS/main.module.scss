@@ -1,0 +1,289 @@
+@use 'colors';
+
+.container
+{
+    max-width: 1020px;
+    width: 90%;
+    margin: auto;
+    padding: 5rem 0;
+
+    h2 
+    {
+        margin-bottom: 1rem;
+        font-variant: small-caps;
+    }
+
+    p:nth-of-type(n+2) {margin-top: 1rem;}
+}
+
+.contain
+{
+    width: 100%;
+    display: flex;
+
+    .left, .right
+    {
+        width: 49%;
+    }
+
+    .leftTh
+    {
+        width: 30%;
+    }
+
+    .leftTh + .right
+    {
+        width: 78%;
+    }
+
+    .left, .leftTh
+    {
+        margin-right: 1%;
+    }
+    
+    .right
+    {
+        margin-left: 1%;
+    }
+}
+
+.hero
+{
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../../public/images/Robert.jpg) no-repeat;
+    background-position: 175% 30%;
+    background-size: 75%;
+
+    h1 {font-variant: small-caps;}
+}
+
+/******* Text Alignment *******/
+.lt {text-align: left;}
+.ct {text-align: center;}
+.rt {text-align: right;}
+
+/******* Text Colors *******/
+.wh {color: colors.$white;}
+.red {color: colors.$red;}
+.black {color: colors.$black;}
+.grey {color: colors.$grey;}
+
+
+/******* Text Sizes *******/
+.xlText 
+{
+    font-size: 5rem;
+    line-height: 7rem;
+}
+
+.lgText 
+{
+    font-size: 3rem;
+    line-height: 4.2rem;
+}
+
+.mdText 
+{
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+}
+
+.smdText 
+{
+    font-size: 1.2rem;
+    line-height: 1.68rem;
+}
+
+.smText 
+{
+    font-size: 0.8rem;
+    line-height: 1.12rem;
+}
+
+.xsText 
+{
+    font-size: 0.7rem;
+    line-height: 0.98rem;
+}
+
+/******* Text Weight *******/
+.bold {font-weight: 700;}
+.med {font-weight: 500;}
+.norm {font-weight: 400;}
+.thin {font-weight: 100;}
+
+.slider
+{
+    min-height: 290px;
+
+    .company
+    {
+        padding: 0.5rem 1rem;
+        border-left: solid 1px colors.$grey;
+        transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+        cursor: pointer;
+
+        &:hover, &.active
+        {
+            background-color: colors.$grey;
+            border-color: colors.$red;
+        }
+    }
+
+    .right 
+    {
+        position: relative;
+        height: 290px;
+    }
+
+    .slide
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+
+        &.active 
+        {
+            opacity: 1;
+        }
+
+        p {margin: 0.5rem 0 1rem;}
+        ul {padding-left: 1rem;}
+    }
+}
+
+.projects
+{
+    height: max-content;
+    flex-wrap: wrap;
+
+    .item 
+    {
+        width: 33.33%;
+        overflow: hidden;
+        aspect-ratio: 1/1;
+
+        .details
+        {
+            margin-top: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgba($color: colors.$black, $alpha: 0.85);
+            opacity: 0;
+            transition: margin-top 0.3s ease, opacity 0.3s ease;
+            aspect-ratio: 1/1;
+
+            .description {margin: 0.5rem 0 2rem;}
+
+            .link
+            {
+                padding: 0.5rem 1.5rem;
+                display: block;
+                border: solid 1px colors.$red;
+                text-transform: uppercase;
+                transition: background-color 0.3s ease;
+
+                &:hover {background-color: colors.$red;}
+            }
+        }
+
+        &:hover .details
+        {
+            margin: 0;
+            opacity: 100;
+        }
+    }
+
+    .dzp {background: url(../../public/images/DZP.jpg) no-repeat center/cover;}
+    .questar {background: url(../../public/images/Questar.jpg) no-repeat center/cover;}
+    .ketoret {background: url(../../public/images/Ketoret.jpg) no-repeat center/cover;}
+    .novawulf {background: url(../../public/images/Novawulf.jpg) no-repeat center/cover;}
+    .acs {background: url(../../public/images/ACS.jpg) no-repeat center/cover;}
+    .saige {background: url(../../public/images/Saige.jpg) no-repeat center/cover;}
+    .hfc {background: url(../../public/images/HFC.jpg) no-repeat center/cover;}
+    .quorum {background: url(../../public/images/Quorum.jpg) no-repeat center/cover;}
+    .passwordGen {background: url(../../public/images/password_gen.png) no-repeat center/cover;}
+    .swEngine {background: url(../../public/images/sw_engine.png) no-repeat center/cover;}
+    .raceClassification {background: url(../../public/images/race_classification.png) no-repeat center/cover;}
+}
+
+@media screen and (max-width: 980px)
+{
+    .projects
+    {
+        .item 
+        {
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+    .container {padding: 2.5rem 0;}
+
+    .hero {background-size: 90%;}
+
+    .slider
+    {
+        min-height: auto;
+        flex-wrap: wrap;
+        overflow: hidden;
+
+        .leftTh, .leftTh + .right {width: 100%;}
+        
+        .leftTh
+        {
+            margin-bottom: 1.5rem;
+
+            .company
+            {
+                padding: 1rem;
+                border: none;
+                border-bottom: solid 1px colors.$grey;
+
+                &:hover, &.active {border-color: colors.$red;}
+            }
+        }
+    }
+
+    .progressBarContainer
+    {
+        flex-wrap: wrap;
+
+        .left, .right 
+        {
+            width: 100%;
+            margin: 0;
+        }
+    }
+
+    .projects
+    {
+        .item
+        {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .slider
+    {
+        .right {min-height: 370px;}
+    }
+}
+
+@media screen and (max-height: 700px)
+{
+    .hero {background-position-y: 55%;}
+}
