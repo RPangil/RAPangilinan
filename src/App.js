@@ -11,7 +11,7 @@ function App()
 {
     const [activeSlide, setActiveSlide] = useState(
     {
-        activeIndex: 1
+        activeIndex: 4
     });
 
     function companyClicked(companyNum)
@@ -73,12 +73,24 @@ function App()
                 <Container title="Places I've Worked" id='Experience'>
                     <div className={`${styles.contain} ${styles.slider}`}>
                         <div className={styles.leftTh}>
-                            <div className={`${styles.company} ${activeSlide.activeIndex === 1 ? styles.active:''}`} onClick={() => companyClicked(1)}>Ovis Technologies</div>
+                            <div className={`${styles.company} ${activeSlide.activeIndex === 4 ? styles.active:''}`} onClick={() => companyClicked(4)}>Geek Squad</div>
+                            <div className={`${styles.company} ${activeSlide.activeIndex === 3 ? styles.active:''}`} onClick={() => companyClicked(3)}>Ovis Technologies</div>
                             <div className={`${styles.company} ${activeSlide.activeIndex === 2 ? styles.active:''}`} onClick={() => companyClicked(2)}>Element Zero</div>
-                            <div className={`${styles.company} ${activeSlide.activeIndex === 3 ? styles.active:''}`} onClick={() => companyClicked(3)}>LaGuardia Community College</div>
+                            <div className={`${styles.company} ${activeSlide.activeIndex === 1 ? styles.active:''}`} onClick={() => companyClicked(1)}>LaGuardia Community College</div>
                         </div>
                         <div className={styles.right}>
-                            <div className={`${styles.slide} ${activeSlide.activeIndex === 1 ? styles.active : ''}`} key={1}>
+                            <div className={`${styles.slide} ${activeSlide.activeIndex === 4 ? styles.active : ''}`} key={4}>
+                                <h3 className={`${styles.smdText} ${styles.med}`}>Consultation Agent - <span>Geek Squad</span></h3>
+                                <p className={styles.smText}>Curent</p>
+                                <ul>
+                                    <li>Lead the micro-market in productivity in January</li>
+                                    <li>Lead the store in productivity</li>
+                                    <li>Troubleshoot or resolve technological issues that customers have with their devices.</li>
+                                    <li>Communicate with the repair agent, if a device is being checked-in, and provide detailed notes on the issues of the device.</li>
+                                </ul>
+                            </div>
+
+                            <div className={`${styles.slide} ${activeSlide.activeIndex === 3 ? styles.active : ''}`} key={3}>
                                 <h3 className={`${styles.smdText} ${styles.med}`}>Jr. Web Developer - <span>Ovis Technologies</span></h3>
                                 <p className={styles.smText}>April 2021 - March 2023</p>
                                 <ul>
@@ -88,7 +100,6 @@ function App()
                                     <li>Coordinated with Project Managers, Lead Developer and the Quality Assurance Group to ensure the project objectives are met</li>
                                 </ul>
                             </div>
-                            
                             
                             <div className={`${styles.slide} ${activeSlide.activeIndex === 2 ? styles.active : ''}`} key={2}>
                                 <h3 className={`${styles.smdText} ${styles.med}`}>Full Stack Web Developer - <span>Element Zero</span></h3>
@@ -100,7 +111,7 @@ function App()
                                 </ul>
                             </div>
                             
-                            <div className={`${styles.slide} ${activeSlide.activeIndex === 3 ? styles.active : ''}`} key={3}>
+                            <div className={`${styles.slide} ${activeSlide.activeIndex === 1 ? styles.active : ''}`} key={1}>
                                 <h3 className={`${styles.smdText} ${styles.med}`}>Instructional Design Assistant - <span>LaGuardia Community College</span></h3>
                                 <p className={styles.smText}>August 2016 - June 2019</p>
                                 <ul>
